@@ -3,54 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/0.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
     <title>Xacademy Clase 1 maquetacion</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        p {
-            margin-right: 40px;
-        }
-        h1 {
-            margin: 0px 400px;
-            text-align: center;
-        }
-        button.redondo {
-            background-color: white;
-            border: 1px solid black;
-            border-radius: 25px;
-            padding: 0px 20px;
-            height: 32px;
-        }
-        div#introduction-actions {
-            display: flex;
-            justify-content: center;
-        }
-    </style>
 </head>
 <body>
-    <div id="header" style="border-bottom: 1px solid gray; display: flex; padding: 10px 100px; justify-content: space-between">
-        <div id="header-left">
-            <img src="logo.svg">
+    <div class="contenedor">
+        <div class="header">
+            <div class="imgCabecera">
+                <img src="logo.svg">
+            </div>
+            <div class="botones">
+                <p>Nosotros</p>
+                <p>Programas</p>
+                <p>Capacitaciones</p>
+                <p>Alianzas</p>
+                <p>Contacto</p>
+                <button class="redondo">Sumate +</button>
+                <p><i class='bx bxl-instagram'></i></p>
+                <p><i class='bx bxl-linkedin'></i></p>   
+            </div>  
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
+
+        <div class="divisor"></div>
+        <div class="introduccion">
+            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la
+                tecnología.</h1>
         </div>
-    </div>
-    <div id="introduction" style="padding: 48px;">
-        <div id="introduction-text">
-            <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
-        </div>
-        <div id="introduction-actions" style="margin-top: 25px;">
+        <div class="buttons">
             <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo diferente" style="margin-left: 14px;">Sumate +</button>
         </div>
+        <div class="impacto">
+            <div class="texto"><h1>. Impacto</h1>
+            Buscamos construir alianzas y fortalecer vínculos para generar una transformación real en la comunidad. 
+            Trabajamos para acercar la tecnología innovadora y disruptiva del sector privado hacia el sector social.
+            </div>
+            <div class="datos">
+                <div class="num"><h1>58</h1><p>Localidades</p></div>
+                <div class="num"><h1><span>+</span>50</h1><p>Mentores</p></div>   
+                <div class="num"><h1>301</h1><p>Participantes</p></div>       
+                
+            </div>            
+        </div>
+        <div class="img"></div>
+        <div class="programa">
+            <h1>. Programas</h1>
+            <img src="xacademy-01.jpg">
+        </div>
+        <div class="programaUno">
+            <img src="xacademy.svg">
+            <h2>xAcademy es un programa de formación en tecnología llevado adelante 
+                por la Fundación Tecnología con Propósito junto a Santex que busca promover 
+                un cambio positivo en la comunidad a través de la educación en IT, 
+                apuntando a lograr la inserción laboral de personas en el mundo 
+                tecnológico.</h2>
+                <button class="redondo">Mas info --></button>
+        </div>
+        <div class="robotica">
+            <h1>Robótica educativa: la tecnología del futuro</h1>
+            <h2>Durante el curso, los alumnos y alumnas a través de la robótica desarrollan la curiosidad, el 
+                autodidactismo y las habilidades blandas necesarias para afrontar la revolución tecnológica 
+                del siglo XXI.</h2>
+                <button class="redondo">Mas info --></button>
+        </div>
+        <div class="roboticaUno">
+            <img src="robotica-educativa-07-600x400.jpg">
+        </div>
+        <div class="capacitaciones">
+            <h1>. Capacitaciones</h1>
+            <img src="estafas-virtuales-04-600x453.jpg">
+        </div>
+        <div class="capacitacionesUno">
+            <h1>Estafas virtuales: ¿cómo protegernos?</h1>
+            <h2>Los canales de comunicación a través de medios digitales cobraron gran protagonismo a partir de la pandemia.
+                Al mismo tiempo, se perfeccionan cada vez más rápido las modalidades de estafas y fraudes virtuales. 
+                En esta capacitación vas a aprender diferentes tips y consejos útiles para navegar de manera más segura.</h2>
+                <button class="redondo">Mas info --></button>
+        </div>
+        <div class="seguridad">
+            <h1>Seguridad informática para infancias</h1>
+           <!-- <h2>¿Navegamos seguros en internet? La propuesta es una charla para niños y niñas donde se brindan 
+                herramientas de seguridad y autocuidado digital.</h2>
+                <button class="redondo">Mas info </button>-->
+        </div>
+        <div class="seguridadUno">
+            <!--<img src="seguridad-informatica-para-infancias-600x398.jpg">-->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
+
+    
 </body>
 </html>

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+
+.contenedor {
+    height: 100%;
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: repeat(6 1fr);
+	grid-template-rows: repeat(8, auto);
+
+	grid-template-areas: "header header header header header header"                        
+						"introduccion introduccion introduccion introduccion introduccion introduccion"
+                        "buttons buttons buttons buttons buttons buttons"
+                        "impacto impacto impacto impacto impacto impacto"
+                        "img img img img img img"
+                        "programa programa programa programaUno programaUno programaUno"
+                        "robotica robotica robotica roboticaUno roboticaUno roboticaUno"
+                        "capacitaciones capacitaciones capacitaciones capacitacionesUno capacitacionesUno capacitacionesUno";
+}
+button { 
+    background-color: white;
+    border-radius: 2em;
+    border: 3px solid black;
+    padding:0.5em 1.4em;
+    height: 2.6em;
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.header{
+    padding-top: -10em;
+    height: 6em;
+    grid-area: header;
+    border-bottom: solid black 1px;
+    display:flex;
+    background-color: white;
+    position: fixed;
+    height: calc(100vh - 10rem);
+}
+
+.imgCabecera{
+    grid-area: imgCabecera; 
+    padding: 1em 20em 0 11em;
+    margin: 0 0 0 -8em;
+   /* height: 6em;
+    width: 6em;
+    border-bottom: solid 1px;*/
+}
+.imgCabecera img{
+    width: 12.5em;
+}
+
+.botones {
+    grid-area: botones;
+    display:flex;
+    justify-content:space-between;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    padding:1em 5em 1em 15em;
+   /* border-bottom: solid 1px;
+    height: 5em;
+    width: 50em;*/
+}
+
+.botones p{
+    padding-right: 2em;
+}
+
+/*
+.divisor{
+    grid-area: divisor;
+    border:solid black 1px;
+    width:120em;
+    padding: 0 0 -50em 0;
+}*/
+
+
+
+.introduccion{
+    grid-area: introduccion; 
+    text-align: center;
+    padding: 5em 26em;
+    font-size: 1.2em;
+}
+
+.buttons{
+    grid-area: buttons; 
+    text-align: center;
+    font-size: 1.2em;
+    margin: -3em 0 4em -5em;
+    padding: 0 0 3em 0;
+}
+
+.redondo:hover{
+    color:white;
+    background-color: black;
+}
+
+.diferente{
+    border: 3px solid #6b53f0;
+    color:#6b53f0;
+}
+
+.diferente:hover{
+    color:white;
+    background-color:#6b53f0;
+}
+
+.impacto{
+    grid-area: impacto;
+    color:white;
+    display:flex; 
+    justify-content: center;
+    align-content: center;  
+    align-items: center; 
+    height: 35em;   
+    background-color:  #201b24; 
+}
+
+.impacto .texto{
+    padding: 0 4em 0 15em;
+    font-size: 1.3em;
+}
+
+
+
+.impacto .datos{
+    padding: 0 17em 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+.datos .num{
+    padding:1em 1em 0 0;
+}
+
+
+.datos p{
+    font-size: 0.5em;
+    margin: -2.5em 0 0 0 ;
+    color:rgba(255, 255, 255, 0.479);
+}
+
+.datos span{
+    color:#6b53f0;
+    margin: 0 0 0 -0.5em;  
+}
+
+
+.img{
+    height: 56em;
+    grid-area: img;
+    background-image: url(grupo.png);
+    background-color: rgba(0, 0, 0, 0);   
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-width: 0px;
+    border-style: solid;
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 10rem);
+}
+
+
+.programa{
+    grid-area: programa;
+    display:grid;
+    padding: 3em 2em;
+    font-size: 1.5em;
+}
+
+.programa img{
+    height: 23em;
+    border-radius: 2em;
+}
+
+.programaUno{
+    grid-area: programaUno;
+    display:grid;
+    padding: 18em 12em 0 2em;
+    font-size: 0.9em;
+}
+.programaUno button{
+    width: 10em;
+    height: 2em;
+    margin-top: -5em ;
+    font-size: 1.3em;
+}
+
+.programaUno h2{
+    margin-top: -4em ;
+}
+
+
+.robotica{
+    grid-area: robotica;
+    display:grid;
+    padding: 6em 12em;
+    font-size: 0.9em;
+}
+
+.robotica h2{
+    margin-top: -4em;
+}
+.robotica button{
+    width: 10em;
+    height: 2em;
+    margin-top: -4em ;
+    font-size: 1.3em;
+}
+
+.roboticaUno{
+    grid-area: roboticaUno;
+}
+
+.roboticaUno img{
+    height: 35em;
+    border-radius: 2em;
+}
+
+.capacitaciones{
+    grid-area: capacitaciones;
+    display:grid;
+    padding: 3em 2em;
+    font-size: 1.5em;
+}
+
+.capacitaciones img{
+    height: 23em;
+    border-radius: 2em;
+}
+.capacitacionesUno{
+    grid-area: capacitacionesUno;
+    display:grid;
+    padding: 18em 12em 0 2em;
+    font-size: 0.9em;
+}
+
+.progracapacitacionesUnomaUno button{
+    width: 10em;
+    height: 2em;
+    margin-top: -5em ;
+    font-size: 1.3em;
+}
+
+.capacitacionesUno h2{
+    margin-top: -4em ;
+}
+
+
+.capacitacionesUno button{
+    width: 10em;
+    height: 2em;
+    margin-top: -6.5em ;
+    font-size: 1.3em;
+}
+
+
+
+.redondo{
+    margin: 0 1em 0 0;
+}
+/*
+img#nabvar-image {
+    width: 12em;
+}
+*/
+/*
+h1 {
+    margin: 0px 400px;
+    text-align: center;
+    font-size: 1em;
+    --font-size:28;
+    line-height: 1.2;
+    
+}*/
+/*
+div#introduction-actions {
+    display: flex;
+    justify-content: center;
+
+}
+*/
+/*
+@media (width >= 2700px){
+    html{
+        font-size: 20px;
+    }
+    header{
+        padding: 0 633px;
+    }
+}
+
+@media (width >= 3200px){
+    html{
+        font-size: 24px;
+    }
+}
+
+@media (width <= 1400px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (width < 900){
+    html{
+        font-size: 2em;
+    }
+}*/
